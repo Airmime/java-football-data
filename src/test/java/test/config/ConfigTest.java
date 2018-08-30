@@ -1,5 +1,5 @@
 package test.config;
 
 abstract public class ConfigTest {
-	public final static String TOKEN = "dd";
+	public final static String TOKEN = "YOUR_TOKEN";
 }
