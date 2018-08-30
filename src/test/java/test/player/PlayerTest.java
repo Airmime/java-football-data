@@ -10,7 +10,7 @@ public class PlayerTest {
 
 	@Test
 	public void testGetPlayer() {
-		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN, ConfigTest.TYPE);
+		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
 		PlayerModel actual = jfdataManager.GetPlayer(44);
 		
 		assertNotNull(actual);

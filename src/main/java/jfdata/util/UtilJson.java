@@ -44,7 +44,6 @@ public class UtilJson<T> {
 
 			http.setRequestMethod("GET");
 			http.setRequestProperty("X-Auth-Token", JfdataManager.TOKEN);
-			http.setRequestProperty("X-Response-Control", JfdataManager.TYPE);
 			http.setUseCaches(false);
 			http.setAllowUserInteraction(false);
 			http.connect();

@@ -14,7 +14,7 @@ public class CompetitionTest {
 
 	@Test
 	public void testGetAllCompetition() {
-		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN, ConfigTest.TYPE);
+		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
 		List<CompetitionModel> actual = jfdataManager.getAllCompetitions().getCompetitions();
 		
 		assertNotNull(actual);
@@ -26,7 +26,7 @@ public class CompetitionTest {
 
 	@Test
 	public void testGetCompetition() {
-		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN, ConfigTest.TYPE);
+		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
 		CompetitionModel actual = jfdataManager.getCompetition(2015);
 		
 		assertNotNull(actual);

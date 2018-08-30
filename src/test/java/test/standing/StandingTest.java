@@ -10,7 +10,7 @@ public class StandingTest {
 
 	@Test
 	public void testGetStanding() {
-		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN, ConfigTest.TYPE);
+		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
 		StandingModel actual = jfdataManager.getStanding(2015);
 		
 		assertNotNull(actual);

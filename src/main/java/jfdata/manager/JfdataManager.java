@@ -13,14 +13,12 @@ import jfdata.util.UtilJson;
 public class JfdataManager{
 
 	public static String TOKEN;
-	public static String TYPE;
 	private static final String URI = "https://api.football-data.org/v2/";
 
 	@SuppressWarnings("static-access")
-	public JfdataManager(String token, String type) {
+	public JfdataManager(String token) {
 		super();
 		this.TOKEN = token;
-		this.TYPE = type;
 	}
 	
 	/**
