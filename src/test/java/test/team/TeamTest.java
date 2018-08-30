@@ -8,6 +8,11 @@ import jfdata.model.team.TeamListModel;
 import jfdata.model.team.TeamModel;
 import test.config.ConfigTest;
 
+/**
+ * JUnit class test for Team
+ * All Team methods are tested in this class
+ * @author remimarion
+ */
 public class TeamTest {
 
 	@Test

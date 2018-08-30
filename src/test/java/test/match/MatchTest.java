@@ -7,6 +7,11 @@ import jfdata.model.match.MatchListModel;
 import jfdata.model.match.MatchModel;
 import test.config.ConfigTest;
 
+/**
+ * JUnit class test for Match
+ * All Match methods are tested in this class
+ * @author remimarion
+ */
 public class MatchTest {
 
 	@Test

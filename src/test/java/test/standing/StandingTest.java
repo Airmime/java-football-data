@@ -6,6 +6,11 @@ import jfdata.manager.JfdataManager;
 import jfdata.model.standing.StandingModel;
 import test.config.ConfigTest;
 
+/**
+ * JUnit class test for Standing
+ * All Standing methods are tested in this class
+ * @author remimarion
+ */
 public class StandingTest {
 
 	@Test

@@ -10,12 +10,20 @@ import jfdata.model.team.TeamListModel;
 import jfdata.model.team.TeamModel;
 import jfdata.util.UtilJson;
 
+/**
+ * The JfdataManager class is the entry point of the libary, it must be instance with your personal token obtained on the football-data.org website. 
+ * @author remimarion
+ */
 public class JfdataManager{
 
 	public static String TOKEN;
 	private static final String URI = "https://api.football-data.org/v2/";
 
 	@SuppressWarnings("static-access")
+	/**
+	 * JfdataManager constructor
+	 * @param Personnal token
+	 */
 	public JfdataManager(String token) {
 		super();
 		this.TOKEN = token;

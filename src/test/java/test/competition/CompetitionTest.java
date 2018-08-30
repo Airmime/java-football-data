@@ -10,6 +10,11 @@ import jfdata.manager.JfdataManager;
 import jfdata.model.competition.CompetitionModel;
 import test.config.ConfigTest;
 
+/**
+ * JUnit class test for Competition
+ * All Competition methods are tested in this class
+ * @author remimarion
+ */
 public class CompetitionTest {
 
 	@Test
