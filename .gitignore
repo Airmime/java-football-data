@@ -28,3 +28,4 @@ target/classes/META-INF/maven/jfdata/jfdata/pom.properties
 .project
 *.prefs
 src/test/java/test/config/ConfigTest.java
+.DS_Store
