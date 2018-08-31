@@ -7,10 +7,10 @@
 This small java library allows you to get all the football data from the football-data.org API. The following data types and championships are available :
 
 ### Data types
-- Compétitions 
+- Competitions 
 - Matchs 
 - Teams
-- Standing
+- Standings
 - Players
 
 ### Championships
@@ -29,7 +29,7 @@ This small java library allows you to get all the football data from the footbal
 
 For more information on the football-data.org API, [visit the website.](https://www.football-data.org) 
 
-## How to use ?
+## How to use / Help ?
 
 [Let's see the wiki.](https://github.com/Airmime/java-football-data/wiki) 
 
