@@ -2,11 +2,10 @@ package test.competition;
 
 import static org.junit.Assert.*;
 
-import java.util.List;
-
 import org.junit.Test;
 
 import jfdata.manager.JfdataManager;
+import jfdata.model.competition.CompetitionListModel;
 import jfdata.model.competition.CompetitionModel;
 import test.config.ConfigTest;
 
@@ -20,11 +19,11 @@ public class CompetitionTest {
 	@Test
 	public void testGetAllCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		List<CompetitionModel> actual = jfdataManager.getAllCompetitions().getCompetitions();
+		CompetitionListModel actual = jfdataManager.getAllCompetitions();
 		
 		assertNotNull(actual);
 		
-		for (CompetitionModel competitionModel : actual) {
+		for (CompetitionModel competitionModel : actual.getCompetitions()) {
 			assertNotNull(competitionModel.getId());
 		}
 	}
