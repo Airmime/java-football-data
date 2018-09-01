@@ -7,12 +7,12 @@ package jfdata.model.match;
 public class MatchScoreModel {
 	
 	//ATTRIBUT
-	String winner;
-	String duration;
-	MatchTimeModel fullTime;
-	MatchTimeModel halfTime;
-	MatchTimeModel extraTime;
-	MatchTimeModel penalties;
+	private String winner;
+	private String duration;
+	private MatchTimeModel fullTime;
+	private MatchTimeModel halfTime;
+	private MatchTimeModel extraTime;
+	private MatchTimeModel penalties;
 	
 	//CONSTRUCTOR
 	public MatchScoreModel(String winner, String duration, MatchTimeModel fullTime, MatchTimeModel halfTime,

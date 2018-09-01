@@ -12,19 +12,19 @@ import jfdata.model.team.TeamModel;
 public class MatchModel {
 
 	//ATTRIBUT
-	String id;
-	CompetitionModel competition;
-	CompetitionSeasonModel season;
-	String utcDate;
-	String status;
-	String venue;
-	String matchday;
-	String stage;
-	String group;
-	String lastUpdated;
-	TeamModel homeTeam;
-	TeamModel awayTeam;
-	MatchScoreModel score;
+	private String id;
+	private CompetitionModel competition;
+	private CompetitionSeasonModel season;
+	private String utcDate;
+	private String status;
+	private String venue;
+	private String matchday;
+	private String stage;
+	private String group;
+	private String lastUpdated;
+	private TeamModel homeTeam;
+	private TeamModel awayTeam;
+	private MatchScoreModel score;
 	
 	//CONTRUCTOR
 	List<MatchRefereesModel> referees;

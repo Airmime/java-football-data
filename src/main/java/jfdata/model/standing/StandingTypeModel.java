@@ -9,10 +9,10 @@ import java.util.List;
 public class StandingTypeModel {
 
 	//ATTRIBUT
-	String stage;
-	String type;
-	String group;
-	List<StandingTeamModel> table;
+	private String stage;
+	private String type;
+	private String group;
+	private List<StandingTeamModel> table;
 	
 	//CONSTRUCTOR
 	public StandingTypeModel(String stage, String type, String group, List<StandingTeamModel> table) {

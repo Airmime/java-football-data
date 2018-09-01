@@ -9,16 +9,16 @@ import jfdata.model.team.TeamModel;
 public class StandingTeamModel {
 
 	//ATTRIBUT
-	String StandingTeamModel;
-	TeamModel team;
-	String playedGames;
-	String won;
-	String draw;
-	String lost;
-	String points;
-	String goalsFor;
-	String goalsAgainst;
-	String goalDifference;
+	private String StandingTeamModel;
+	private TeamModel team;
+	private String playedGames;
+	private String won;
+	private String draw;
+	private String lost;
+	private String points;
+	private String goalsFor;
+	private String goalsAgainst;
+	private String goalDifference;
 	
 	//CONSTRUCTOR
 	public StandingTeamModel(String standingTeamModel, TeamModel team, String playedGames, String won, String draw,

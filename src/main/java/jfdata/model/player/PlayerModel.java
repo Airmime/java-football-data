@@ -7,16 +7,16 @@ package jfdata.model.player;
 public class PlayerModel {
 
 	//ATTRIBUT
-	String id;
-	String name;
-	String firstName;
-	String lastName;
-	String position;
-	String dateOfBirth;
-	String countryOfBirth;
-	String nationality;
-	String role;
-	String lastUpdated;
+	private String id;
+	private String name;
+	private String firstName;
+	private String lastName;
+	private String position;
+	private String dateOfBirth;
+	private String countryOfBirth;
+	private String nationality;
+	private String role;
+	private String lastUpdated;
 	
 	
 	//CONSTRUCTOR

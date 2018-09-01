@@ -13,21 +13,21 @@ import jfdata.model.player.PlayerModel;
 public class TeamModel {
 	
 	//ATTRIBUT
-	String id;
-	AreaModel area;
-	List<CompetitionModel> activeCompetitions;
-	String name;
-	String shortName;
-	String tla;
-	String address;
-	String phone;
-	String website;
-	String email;
-	String founded;
-	String clubColors;
-	String venue;
-	List<PlayerModel> squad;
-	String lastUpdated;
+	private String id;
+	private AreaModel area;
+	private List<CompetitionModel> activeCompetitions;
+	private String name;
+	private String shortName;
+	private String tla;
+	private String address;
+	private String phone;
+	private String website;
+	private String email;
+	private String founded;
+	private String clubColors;
+	private String venue;
+	private List<PlayerModel> squad;
+	private String lastUpdated;
 	
 	//CONSTRUCTOR
 	public TeamModel() {

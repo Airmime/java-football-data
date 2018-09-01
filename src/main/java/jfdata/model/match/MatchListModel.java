@@ -10,9 +10,9 @@ import jfdata.model.competition.CompetitionModel;
 public class MatchListModel {
 
 	//ATTRIBUT
-	String count;
-	CompetitionModel competition;
-	List<MatchModel> matches;
+	private String count;
+	private CompetitionModel competition;
+	private List<MatchModel> matches;
 	
 	//CONSTRUCTOR
 	public MatchListModel(String count, CompetitionModel competition, List<MatchModel> matches) {

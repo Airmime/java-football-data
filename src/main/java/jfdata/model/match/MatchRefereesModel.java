@@ -7,9 +7,9 @@ package jfdata.model.match;
 public class MatchRefereesModel {
 	
 	//ATTRIBUT
-	String id;
-	String name;
-	String nationality;
+	private String id;
+	private String name;
+	private String nationality;
 	
 	//CONSTRUCTOR
 	public MatchRefereesModel(String id, String name, String nationality) {

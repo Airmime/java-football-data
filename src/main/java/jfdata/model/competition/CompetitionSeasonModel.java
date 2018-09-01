@@ -7,10 +7,10 @@ package jfdata.model.competition;
 public class CompetitionSeasonModel {
 
 	//ATTRIBUT
-	String id;
-	String startDate;
-	String endDate;
-	String currentMatchday;
+	private String id;
+	private String startDate;
+	private String endDate;
+	private String currentMatchday;
 	
 	//CONSTRUCTOR
 	public CompetitionSeasonModel() {

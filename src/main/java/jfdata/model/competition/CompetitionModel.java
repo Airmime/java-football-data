@@ -11,14 +11,14 @@ import jfdata.model.area.AreaModel;
 public class CompetitionModel {
 	
 	//ATTRIBUT
-	String id;
-	AreaModel area;
-	String name;
-	String code;
-	String plan;
-	CompetitionSeasonModel currentSeason;
-	List<CompetitionSeasonModel> seasons;
-	String lastUpdated;
+	private String id;
+	private AreaModel area;
+	private String name;
+	private String code;
+	private String plan;
+	private CompetitionSeasonModel currentSeason;
+	private List<CompetitionSeasonModel> seasons;
+	private String lastUpdated;
 	
 	//CONSTRUCTOR
 	

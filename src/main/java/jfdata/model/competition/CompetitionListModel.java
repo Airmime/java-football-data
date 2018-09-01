@@ -9,8 +9,8 @@ import java.util.List;
 public class CompetitionListModel{
 	
 	//ATTRIBUT
-	String count;
-	List<CompetitionModel> competitions;
+	private String count;
+	private List<CompetitionModel> competitions;
 	
 	//CONSTRUCTOR
 	public CompetitionListModel(String id, List<CompetitionModel> competitions) {

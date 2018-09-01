@@ -12,9 +12,9 @@ import jfdata.model.competition.CompetitionSeasonModel;
 public class StandingModel {
 
 	//ATTRIBUT
-	CompetitionModel competition;
-	CompetitionSeasonModel season;
-	List<StandingTypeModel> standings;
+	private CompetitionModel competition;
+	private CompetitionSeasonModel season;
+	private List<StandingTypeModel> standings;
 	
 	//CONSTRUCTOR
 	public StandingModel(CompetitionModel competition, CompetitionSeasonModel season,

@@ -7,8 +7,8 @@ package jfdata.model.match;
 public class MatchTimeModel {
 
 	//ATTRIBUT
-	String homeTeam;
-	String awayTeam;
+	private String homeTeam;
+	private String awayTeam;
 	
 	//CONSTRUCTOR
 	public MatchTimeModel(String homeTeam, String awayTeam) {

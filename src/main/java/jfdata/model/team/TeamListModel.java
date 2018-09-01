@@ -12,10 +12,10 @@ import jfdata.model.competition.CompetitionSeasonModel;
 public class TeamListModel {
 	
 	//ATTRIBUT
-	String count;
-	CompetitionModel competition;
-	CompetitionSeasonModel season;
-	List<TeamModel> teams;
+	private String count;
+	private CompetitionModel competition;
+	private CompetitionSeasonModel season;
+	private List<TeamModel> teams;
 	
 	//CONSTRUCTOR
 	public TeamListModel() {
