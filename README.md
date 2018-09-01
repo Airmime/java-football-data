@@ -2,6 +2,7 @@
 
 > ⚽️ Java library for football-data.org's API.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/45187c1a4c0d4699a3bf27a26fca0443)](https://app.codacy.com/app/Airmime/java-football-data?utm_source=github.com&utm_medium=referral&utm_content=Airmime/java-football-data&utm_campaign=Badge_Grade_Dashboard)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 This small java library allows you to get all the football data from the football-data.org API. The following data types and championships are available :
