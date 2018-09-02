@@ -53,7 +53,7 @@ public class JfdataManager{
 	 * @param IdCompetition
 	 * @return TeamListModel who contains list of TeamModel
 	 */
-	public TeamListModel GetTeamsByCompetition(int idCompetition) {
+	public TeamListModel getTeamsByCompetition(int idCompetition) {
 		UtilJson<TeamListModel> utilJson = new UtilJson<TeamListModel>();
 		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition +"/teams", TeamListModel.class);
 	}
@@ -63,7 +63,7 @@ public class JfdataManager{
 	 * @param idTeam
 	 * @return Team object
 	 */
-	public TeamModel GetTeam(int idTeam) {
+	public TeamModel getTeam(int idTeam) {
 		UtilJson<TeamModel> utilJson = new UtilJson<TeamModel>();
 		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam, TeamModel.class);
 	}
@@ -73,7 +73,7 @@ public class JfdataManager{
 	 * @param idPlayer
 	 * @return Player object
 	 */
-	public PlayerModel GetPlayer(int idPlayer) {
+	public PlayerModel getPlayer(int idPlayer) {
 		UtilJson<PlayerModel> utilJson = new UtilJson<PlayerModel>();
 		return utilJson.getObjectFromJson(URI + "players/"+ idPlayer, PlayerModel.class);
 	}
@@ -103,7 +103,7 @@ public class JfdataManager{
 	 * @param idCompetition
 	 * @return MatchListModel object
 	 */
-	public MatchListModel getMatchByCompetition(int idCompetition ) {
+	public MatchListModel getMatchesByCompetition(int idCompetition ) {
 		UtilJson<MatchListModel> utilJson = new UtilJson<MatchListModel>();
 		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition + "/matches", MatchListModel.class);
 	}
@@ -113,7 +113,7 @@ public class JfdataManager{
 	 * @param idCompetition
 	 * @return MatchListModel object
 	 */
-	public MatchListModel getMatchByTeam(int idTeam) {
+	public MatchListModel getMatchesByTeam(int idTeam) {
 		UtilJson<MatchListModel> utilJson = new UtilJson<MatchListModel>();
 		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam + "/matches", MatchListModel.class);
 	}

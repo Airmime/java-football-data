@@ -34,9 +34,9 @@ public class TeamModel {
 		super();
 	}
 
-	public TeamModel(String id, AreaModel area, List<CompetitionModel> activeCompetitions, String name, String shortName,
-			String tla, String address, String phone, String website, String email, String founded, String clubColors,
-			String venue, List<PlayerModel> squad, String lastUpdated) {
+	public TeamModel(String id, AreaModel area, List<CompetitionModel> activeCompetitions, String name,
+			String shortName, String tla, String address, String phone, String website, String email, String founded,
+			String clubColors, String venue, List<PlayerModel> squad, String lastUpdated) {
 		super();
 		this.id = id;
 		this.area = area;

@@ -27,7 +27,7 @@ public class MatchTest {
 	@Test
 	public void testGetMatchByCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		MatchListModel actual = jfdataManager.getMatchByCompetition(2015);
+		MatchListModel actual = jfdataManager.getMatchesByCompetition(2015);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getMatches());
@@ -36,7 +36,7 @@ public class MatchTest {
 	@Test
 	public void testGetMatchByTeam() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		MatchListModel actual = jfdataManager.getMatchByTeam(527);
+		MatchListModel actual = jfdataManager.getMatchesByTeam(527);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getMatches());

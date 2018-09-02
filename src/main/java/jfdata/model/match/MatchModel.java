@@ -25,9 +25,9 @@ public class MatchModel {
 	private TeamModel homeTeam;
 	private TeamModel awayTeam;
 	private MatchScoreModel score;
+	private List<MatchRefereesModel> referees;
 	
 	//CONTRUCTOR
-	List<MatchRefereesModel> referees;
 	public MatchModel(String id, CompetitionModel competition, CompetitionSeasonModel season, String utcDate,
 			String status, String venue, String matchday, String stage, String group, String lastUpdated,
 			TeamModel homeTeam, TeamModel awayTeam, MatchScoreModel score, List<MatchRefereesModel> referees) {
@@ -47,7 +47,7 @@ public class MatchModel {
 		this.score = score;
 		this.referees = referees;
 	}
-	
+
 	//GET/SET
 	public String getId() {
 		return id;

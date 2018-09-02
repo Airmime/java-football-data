@@ -7,6 +7,10 @@
 	<version>0.0.1</version>
 	<name>jfdata</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>

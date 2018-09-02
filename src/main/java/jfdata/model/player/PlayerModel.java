@@ -34,6 +34,7 @@ public class PlayerModel {
 		this.role = role;
 		this.lastUpdated = lastUpdated;
 	}
+	
 
 	//GET/SET
 	public String getId() {

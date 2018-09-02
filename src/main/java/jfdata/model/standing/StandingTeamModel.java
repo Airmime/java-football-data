@@ -24,7 +24,7 @@ public class StandingTeamModel {
 	public StandingTeamModel(String standingTeamModel, TeamModel team, String playedGames, String won, String draw,
 			String lost, String points, String goalsFor, String goalsAgainst, String goalDifference) {
 		super();
-		StandingTeamModel = standingTeamModel;
+		this.StandingTeamModel = standingTeamModel;
 		this.team = team;
 		this.playedGames = playedGames;
 		this.won = won;

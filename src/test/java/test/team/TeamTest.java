@@ -18,7 +18,7 @@ public class TeamTest {
 	@Test
 	public void testGetTeamsByCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		TeamListModel actual = jfdataManager.GetTeamsByCompetition(2015);
+		TeamListModel actual = jfdataManager.getTeamsByCompetition(2015);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getTeams());
@@ -27,7 +27,7 @@ public class TeamTest {
 	@Test
 	public void testGetTeam() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		TeamModel actual = jfdataManager.GetTeam(18);
+		TeamModel actual = jfdataManager.getTeam(18);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getName());
