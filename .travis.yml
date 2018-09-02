@@ -6,6 +6,5 @@ jdk: oraclejdk8
 
 ## script 
 script: 
-  mvn clean install
-  mvn test -B
+  mvn clean verify
 
