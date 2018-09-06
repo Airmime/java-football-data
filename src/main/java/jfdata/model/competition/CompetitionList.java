@@ -6,14 +6,14 @@ import java.util.List;
  * Class model for Competition list
  * @author remimarion
  */
-public class CompetitionListModel{
+public class CompetitionList{
 	
 	//ATTRIBUT
 	private String count;
-	private List<CompetitionModel> competitions;
+	private List<Competition> competitions;
 	
 	//CONSTRUCTOR
-	public CompetitionListModel(String id, List<CompetitionModel> competitions) {
+	public CompetitionList(String id, List<Competition> competitions) {
 		super();
 		this.count = id;
 		this.competitions = competitions;
@@ -28,11 +28,11 @@ public class CompetitionListModel{
 		this.count = id;
 	}
 
-	public List<CompetitionModel> getCompetitions() {
+	public List<Competition> getCompetitions() {
 		return competitions;
 	}
 
-	public void setCompetitions(List<CompetitionModel> competitions) {
+	public void setCompetitions(List<Competition> competitions) {
 		this.competitions = competitions;
 	}
 

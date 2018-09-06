@@ -1,13 +1,13 @@
 package jfdata.manager;
 
-import jfdata.model.competition.CompetitionListModel;
-import jfdata.model.competition.CompetitionModel;
-import jfdata.model.match.MatchListModel;
-import jfdata.model.match.MatchModel;
-import jfdata.model.player.PlayerModel;
-import jfdata.model.standing.StandingModel;
-import jfdata.model.team.TeamListModel;
-import jfdata.model.team.TeamModel;
+import jfdata.model.competition.CompetitionList;
+import jfdata.model.competition.Competition;
+import jfdata.model.match.MatchList;
+import jfdata.model.match.Match;
+import jfdata.model.player.Player;
+import jfdata.model.standing.Standing;
+import jfdata.model.team.TeamList;
+import jfdata.model.team.Team;
 import jfdata.util.UtilJson;
 
 /**
@@ -33,9 +33,9 @@ public class JfdataManager{
 	 * Get all competitions
 	 * @return CompetitionListModel who contains list of CompetitionModel
 	 */
-	public CompetitionListModel getAllCompetitions() {
-		UtilJson<CompetitionListModel> utilJson = new UtilJson<CompetitionListModel>();
-		return utilJson.getObjectFromJson(URI + "competitions/", CompetitionListModel.class);
+	public CompetitionList getAllCompetitions() {
+		UtilJson<CompetitionList> utilJson = new UtilJson<CompetitionList>();
+		return utilJson.getObjectFromJson(URI + "competitions/", CompetitionList.class);
 	}
 	
 	/**
@@ -43,9 +43,9 @@ public class JfdataManager{
 	 * @param IdCompetition
 	 * @return Competition object
 	 */
-	public CompetitionModel getCompetition(int IdCompetition) {
-		UtilJson<CompetitionModel> utilJson = new UtilJson<CompetitionModel>();
-		return utilJson.getObjectFromJson(URI + "competitions/" + IdCompetition, CompetitionModel.class);
+	public Competition getCompetition(int IdCompetition) {
+		UtilJson<Competition> utilJson = new UtilJson<Competition>();
+		return utilJson.getObjectFromJson(URI + "competitions/" + IdCompetition, Competition.class);
 	}
 	
 	/**
@@ -53,9 +53,9 @@ public class JfdataManager{
 	 * @param IdCompetition
 	 * @return TeamListModel who contains list of TeamModel
 	 */
-	public TeamListModel getTeamsByCompetition(int idCompetition) {
-		UtilJson<TeamListModel> utilJson = new UtilJson<TeamListModel>();
-		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition +"/teams", TeamListModel.class);
+	public TeamList getTeamsByCompetition(int idCompetition) {
+		UtilJson<TeamList> utilJson = new UtilJson<TeamList>();
+		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition +"/teams", TeamList.class);
 	}
 	
 	/**
@@ -63,9 +63,9 @@ public class JfdataManager{
 	 * @param idTeam
 	 * @return Team object
 	 */
-	public TeamModel getTeam(int idTeam) {
-		UtilJson<TeamModel> utilJson = new UtilJson<TeamModel>();
-		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam, TeamModel.class);
+	public Team getTeam(int idTeam) {
+		UtilJson<Team> utilJson = new UtilJson<Team>();
+		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam, Team.class);
 	}
 	
 	/**
@@ -73,9 +73,9 @@ public class JfdataManager{
 	 * @param idPlayer
 	 * @return Player object
 	 */
-	public PlayerModel getPlayer(int idPlayer) {
-		UtilJson<PlayerModel> utilJson = new UtilJson<PlayerModel>();
-		return utilJson.getObjectFromJson(URI + "players/"+ idPlayer, PlayerModel.class);
+	public Player getPlayer(int idPlayer) {
+		UtilJson<Player> utilJson = new UtilJson<Player>();
+		return utilJson.getObjectFromJson(URI + "players/"+ idPlayer, Player.class);
 	}
 	
 	/**
@@ -83,9 +83,9 @@ public class JfdataManager{
 	 * @param idCompetition
 	 * @return Standing object
 	 */
-	public StandingModel getStanding(int idCompetition) {
-		UtilJson<StandingModel> utilJson = new UtilJson<StandingModel>();
-		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition + "/standings", StandingModel.class);
+	public Standing getStanding(int idCompetition) {
+		UtilJson<Standing> utilJson = new UtilJson<Standing>();
+		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition + "/standings", Standing.class);
 	}
 	
 	/**
@@ -93,9 +93,9 @@ public class JfdataManager{
 	 * @param idMatch
 	 * @return MatchModel object
 	 */
-	public MatchModel getMatch(int idMatch ) {
-		UtilJson<MatchModel> utilJson = new UtilJson<MatchModel>();
-		return utilJson.getObjectFromJson(URI + "matches/"+ idMatch, MatchModel.class);
+	public Match getMatch(int idMatch ) {
+		UtilJson<Match> utilJson = new UtilJson<Match>();
+		return utilJson.getObjectFromJson(URI + "matches/"+ idMatch, Match.class);
 	}
 	
 	/**
@@ -103,9 +103,9 @@ public class JfdataManager{
 	 * @param idCompetition
 	 * @return MatchListModel object
 	 */
-	public MatchListModel getMatchesByCompetition(int idCompetition ) {
-		UtilJson<MatchListModel> utilJson = new UtilJson<MatchListModel>();
-		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition + "/matches", MatchListModel.class);
+	public MatchList getMatchesByCompetition(int idCompetition ) {
+		UtilJson<MatchList> utilJson = new UtilJson<MatchList>();
+		return utilJson.getObjectFromJson(URI + "competitions/"+ idCompetition + "/matches", MatchList.class);
 	}
 	
 	/**
@@ -113,8 +113,8 @@ public class JfdataManager{
 	 * @param idCompetition
 	 * @return MatchListModel object
 	 */
-	public MatchListModel getMatchesByTeam(int idTeam) {
-		UtilJson<MatchListModel> utilJson = new UtilJson<MatchListModel>();
-		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam + "/matches", MatchListModel.class);
+	public MatchList getMatchesByTeam(int idTeam) {
+		UtilJson<MatchList> utilJson = new UtilJson<MatchList>();
+		return utilJson.getObjectFromJson(URI + "teams/"+ idTeam + "/matches", MatchList.class);
 	}
 }

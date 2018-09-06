@@ -4,14 +4,14 @@ package jfdata.model.match;
  * Class model for time score
  * @author remimarion
  */
-public class MatchTimeModel {
+public class MatchTime {
 
 	//ATTRIBUT
 	private String homeTeam;
 	private String awayTeam;
 	
 	//CONSTRUCTOR
-	public MatchTimeModel(String homeTeam, String awayTeam) {
+	public MatchTime(String homeTeam, String awayTeam) {
 		super();
 		this.homeTeam = homeTeam;
 		this.awayTeam = awayTeam;

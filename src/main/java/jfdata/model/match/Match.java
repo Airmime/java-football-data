@@ -1,20 +1,20 @@
 package jfdata.model.match;
 
 import java.util.List;
-import jfdata.model.competition.CompetitionModel;
-import jfdata.model.competition.CompetitionSeasonModel;
-import jfdata.model.team.TeamModel;
+import jfdata.model.competition.Competition;
+import jfdata.model.competition.CompetitionSeason;
+import jfdata.model.team.Team;
 
 /**
  * Class model for Match
  * @author remimarion
  */
-public class MatchModel {
+public class Match {
 
 	//ATTRIBUT
 	private String id;
-	private CompetitionModel competition;
-	private CompetitionSeasonModel season;
+	private Competition competition;
+	private CompetitionSeason season;
 	private String utcDate;
 	private String status;
 	private String venue;
@@ -22,15 +22,15 @@ public class MatchModel {
 	private String stage;
 	private String group;
 	private String lastUpdated;
-	private TeamModel homeTeam;
-	private TeamModel awayTeam;
-	private MatchScoreModel score;
-	private List<MatchRefereesModel> referees;
+	private Team homeTeam;
+	private Team awayTeam;
+	private MatchScore score;
+	private List<MatchReferees> referees;
 	
 	//CONTRUCTOR
-	public MatchModel(String id, CompetitionModel competition, CompetitionSeasonModel season, String utcDate,
+	public Match(String id, Competition competition, CompetitionSeason season, String utcDate,
 			String status, String venue, String matchday, String stage, String group, String lastUpdated,
-			TeamModel homeTeam, TeamModel awayTeam, MatchScoreModel score, List<MatchRefereesModel> referees) {
+			Team homeTeam, Team awayTeam, MatchScore score, List<MatchReferees> referees) {
 		super();
 		this.id = id;
 		this.competition = competition;
@@ -55,16 +55,16 @@ public class MatchModel {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public CompetitionModel getCompetition() {
+	public Competition getCompetition() {
 		return competition;
 	}
-	public void setCompetition(CompetitionModel competition) {
+	public void setCompetition(Competition competition) {
 		this.competition = competition;
 	}
-	public CompetitionSeasonModel getSeason() {
+	public CompetitionSeason getSeason() {
 		return season;
 	}
-	public void setSeason(CompetitionSeasonModel season) {
+	public void setSeason(CompetitionSeason season) {
 		this.season = season;
 	}
 	public String getUtcDate() {
@@ -109,28 +109,28 @@ public class MatchModel {
 	public void setLastUpdated(String lastUpdated) {
 		this.lastUpdated = lastUpdated;
 	}
-	public TeamModel getHomeTeam() {
+	public Team getHomeTeam() {
 		return homeTeam;
 	}
-	public void setHomeTeam(TeamModel homeTeam) {
+	public void setHomeTeam(Team homeTeam) {
 		this.homeTeam = homeTeam;
 	}
-	public TeamModel getAwayTeam() {
+	public Team getAwayTeam() {
 		return awayTeam;
 	}
-	public void setAwayTeam(TeamModel awayTeam) {
+	public void setAwayTeam(Team awayTeam) {
 		this.awayTeam = awayTeam;
 	}
-	public MatchScoreModel getScore() {
+	public MatchScore getScore() {
 		return score;
 	}
-	public void setScore(MatchScoreModel score) {
+	public void setScore(MatchScore score) {
 		this.score = score;
 	}
-	public List<MatchRefereesModel> getReferees() {
+	public List<MatchReferees> getReferees() {
 		return referees;
 	}
-	public void setReferees(List<MatchRefereesModel> referees) {
+	public void setReferees(List<MatchReferees> referees) {
 		this.referees = referees;
 	}
 

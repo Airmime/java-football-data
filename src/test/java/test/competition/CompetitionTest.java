@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import jfdata.manager.JfdataManager;
-import jfdata.model.competition.CompetitionListModel;
-import jfdata.model.competition.CompetitionModel;
+import jfdata.model.competition.CompetitionList;
+import jfdata.model.competition.Competition;
 import test.config.ConfigTest;
 
 /**
@@ -19,11 +19,11 @@ public class CompetitionTest {
 	@Test
 	public void testGetAllCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		CompetitionListModel actual = jfdataManager.getAllCompetitions();
+		CompetitionList actual = jfdataManager.getAllCompetitions();
 		
 		assertNotNull(actual);
 		
-		for (CompetitionModel competitionModel : actual.getCompetitions()) {
+		for (Competition competitionModel : actual.getCompetitions()) {
 			assertNotNull(competitionModel.getId());
 		}
 	}
@@ -31,7 +31,7 @@ public class CompetitionTest {
 	@Test
 	public void testGetCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		CompetitionModel actual = jfdataManager.getCompetition(2015);
+		Competition actual = jfdataManager.getCompetition(2015);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getId());

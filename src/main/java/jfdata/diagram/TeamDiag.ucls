@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="false" realizations="true" 
   associations="false" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="jfdata.model.team.TeamListModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/team/TeamListModel.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="jfdata.model.team.TeamList" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/team/TeamList.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="264" y="184"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="jfdata.model.team.TeamModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/team/TeamModel.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="jfdata.model.team.Team" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/team/Team.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="935" y="482"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

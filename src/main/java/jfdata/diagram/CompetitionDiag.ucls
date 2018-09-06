@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="true" generalizations="false" realizations="true" 
   associations="false" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="jfdata.model.competition.CompetitionListModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/competition/CompetitionListModel.java" binary="false" 
+  <class id="1" language="java" name="jfdata.model.competition.CompetitionList" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/competition/CompetitionList.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="179" y="131"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -11,8 +11,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="jfdata.model.competition.CompetitionModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/competition/CompetitionModel.java" binary="false" 
+  <class id="2" language="java" name="jfdata.model.competition.Competition" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/competition/Competition.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="700" y="303"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -21,8 +21,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="jfdata.model.competition.CompetitionSeasonModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/competition/CompetitionSeasonModel.java" binary="false" 
+  <class id="3" language="java" name="jfdata.model.competition.CompetitionSeason" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/competition/CompetitionSeason.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="177" y="426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -31,8 +31,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="jfdata.model.area.AreaModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/area/AreaModel.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="jfdata.model.area.Area" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/area/Area.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="227" width="306" x="25" y="615"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

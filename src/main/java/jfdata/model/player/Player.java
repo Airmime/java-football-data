@@ -4,7 +4,7 @@ package jfdata.model.player;
  * Class model for Player
  * @author remimarion
  */
-public class PlayerModel {
+public class Player {
 
 	//ATTRIBUT
 	private String id;
@@ -20,7 +20,7 @@ public class PlayerModel {
 	
 	
 	//CONSTRUCTOR
-	public PlayerModel(String id, String name, String firstName, String lastName, String position, String dateOfBirth,
+	public Player(String id, String name, String firstName, String lastName, String position, String dateOfBirth,
 			String countryOfBirth, String nationality, String role, String lastUpdated) {
 		super();
 		this.id = id;

@@ -3,8 +3,8 @@ package test.match;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import jfdata.manager.JfdataManager;
-import jfdata.model.match.MatchListModel;
-import jfdata.model.match.MatchModel;
+import jfdata.model.match.MatchList;
+import jfdata.model.match.Match;
 import test.config.ConfigTest;
 
 /**
@@ -17,7 +17,7 @@ public class MatchTest {
 	@Test
 	public void testGetMatch() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		MatchModel actual = jfdataManager.getMatch(238997);
+		Match actual = jfdataManager.getMatch(238997);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getScore());
@@ -27,7 +27,7 @@ public class MatchTest {
 	@Test
 	public void testGetMatchByCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		MatchListModel actual = jfdataManager.getMatchesByCompetition(2015);
+		MatchList actual = jfdataManager.getMatchesByCompetition(2015);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getMatches());
@@ -36,7 +36,7 @@ public class MatchTest {
 	@Test
 	public void testGetMatchByTeam() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		MatchListModel actual = jfdataManager.getMatchesByTeam(527);
+		MatchList actual = jfdataManager.getMatchesByTeam(527);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getMatches());

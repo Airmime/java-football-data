@@ -4,7 +4,7 @@ package jfdata.model.match;
  * Class model for Referees
  * @author remimarion
  */
-public class MatchRefereesModel {
+public class MatchReferees {
 	
 	//ATTRIBUT
 	private String id;
@@ -12,7 +12,7 @@ public class MatchRefereesModel {
 	private String nationality;
 	
 	//CONSTRUCTOR
-	public MatchRefereesModel(String id, String name, String nationality) {
+	public MatchReferees(String id, String name, String nationality) {
 		super();
 		this.id = id;
 		this.name = name;

@@ -1,16 +1,16 @@
 package jfdata.model.standing;
 
-import jfdata.model.team.TeamModel;
+import jfdata.model.team.Team;
 
 /**
  * Class model for StandingTeamModel
  * @author remimarion
  */
-public class StandingTeamModel {
+public class StandingTeam {
 
 	//ATTRIBUT
 	private String StandingTeamModel;
-	private TeamModel team;
+	private Team team;
 	private String playedGames;
 	private String won;
 	private String draw;
@@ -21,7 +21,7 @@ public class StandingTeamModel {
 	private String goalDifference;
 	
 	//CONSTRUCTOR
-	public StandingTeamModel(String standingTeamModel, TeamModel team, String playedGames, String won, String draw,
+	public StandingTeam(String standingTeamModel, Team team, String playedGames, String won, String draw,
 			String lost, String points, String goalsFor, String goalsAgainst, String goalDifference) {
 		super();
 		this.StandingTeamModel = standingTeamModel;
@@ -45,11 +45,11 @@ public class StandingTeamModel {
 		StandingTeamModel = standingTeamModel;
 	}
 
-	public TeamModel getTeam() {
+	public Team getTeam() {
 		return team;
 	}
 
-	public void setTeam(TeamModel team) {
+	public void setTeam(Team team) {
 		this.team = team;
 	}
 

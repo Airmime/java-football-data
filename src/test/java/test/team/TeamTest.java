@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import jfdata.manager.JfdataManager;
-import jfdata.model.team.TeamListModel;
-import jfdata.model.team.TeamModel;
+import jfdata.model.team.TeamList;
+import jfdata.model.team.Team;
 import test.config.ConfigTest;
 
 /**
@@ -18,7 +18,7 @@ public class TeamTest {
 	@Test
 	public void testGetTeamsByCompetition() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		TeamListModel actual = jfdataManager.getTeamsByCompetition(2015);
+		TeamList actual = jfdataManager.getTeamsByCompetition(2015);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getTeams());
@@ -27,7 +27,7 @@ public class TeamTest {
 	@Test
 	public void testGetTeam() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		TeamModel actual = jfdataManager.getTeam(18);
+		Team actual = jfdataManager.getTeam(18);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getName());

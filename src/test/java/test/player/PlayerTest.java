@@ -3,7 +3,7 @@ package test.player;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import jfdata.manager.JfdataManager;
-import jfdata.model.player.PlayerModel;
+import jfdata.model.player.Player;
 import test.config.ConfigTest;
 
 /**
@@ -16,7 +16,7 @@ public class PlayerTest {
 	@Test
 	public void testGetPlayer() {
 		JfdataManager jfdataManager = new JfdataManager(ConfigTest.TOKEN);
-		PlayerModel actual = jfdataManager.getPlayer(44);
+		Player actual = jfdataManager.getPlayer(44);
 		
 		assertNotNull(actual);
 		assertNotNull(actual.getName());

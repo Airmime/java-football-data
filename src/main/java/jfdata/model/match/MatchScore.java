@@ -4,19 +4,19 @@ package jfdata.model.match;
  * Class model for Score
  * @author remimarion
  */
-public class MatchScoreModel {
+public class MatchScore {
 	
 	//ATTRIBUT
 	private String winner;
 	private String duration;
-	private MatchTimeModel fullTime;
-	private MatchTimeModel halfTime;
-	private MatchTimeModel extraTime;
-	private MatchTimeModel penalties;
+	private MatchTime fullTime;
+	private MatchTime halfTime;
+	private MatchTime extraTime;
+	private MatchTime penalties;
 	
 	//CONSTRUCTOR
-	public MatchScoreModel(String winner, String duration, MatchTimeModel fullTime, MatchTimeModel halfTime,
-			MatchTimeModel extraTime, MatchTimeModel penalties) {
+	public MatchScore(String winner, String duration, MatchTime fullTime, MatchTime halfTime,
+			MatchTime extraTime, MatchTime penalties) {
 		super();
 		this.winner = winner;
 		this.duration = duration;
@@ -43,35 +43,35 @@ public class MatchScoreModel {
 		this.duration = duration;
 	}
 
-	public MatchTimeModel getFullTime() {
+	public MatchTime getFullTime() {
 		return fullTime;
 	}
 
-	public void setFullTime(MatchTimeModel fullTime) {
+	public void setFullTime(MatchTime fullTime) {
 		this.fullTime = fullTime;
 	}
 
-	public MatchTimeModel getHalfTime() {
+	public MatchTime getHalfTime() {
 		return halfTime;
 	}
 
-	public void setHalfTime(MatchTimeModel halfTime) {
+	public void setHalfTime(MatchTime halfTime) {
 		this.halfTime = halfTime;
 	}
 
-	public MatchTimeModel getExtraTime() {
+	public MatchTime getExtraTime() {
 		return extraTime;
 	}
 
-	public void setExtraTime(MatchTimeModel extraTime) {
+	public void setExtraTime(MatchTime extraTime) {
 		this.extraTime = extraTime;
 	}
 
-	public MatchTimeModel getPenalties() {
+	public MatchTime getPenalties() {
 		return penalties;
 	}
 
-	public void setPenalties(MatchTimeModel penalties) {
+	public void setPenalties(MatchTime penalties) {
 		this.penalties = penalties;
 	}
 

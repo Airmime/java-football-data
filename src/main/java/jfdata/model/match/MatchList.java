@@ -1,21 +1,21 @@
 package jfdata.model.match;
 
 import java.util.List;
-import jfdata.model.competition.CompetitionModel;
+import jfdata.model.competition.Competition;
 
 /**
  * Class model for Match list
  * @author remimarion
  */
-public class MatchListModel {
+public class MatchList {
 
 	//ATTRIBUT
 	private String count;
-	private CompetitionModel competition;
-	private List<MatchModel> matches;
+	private Competition competition;
+	private List<Match> matches;
 	
 	//CONSTRUCTOR
-	public MatchListModel(String count, CompetitionModel competition, List<MatchModel> matches) {
+	public MatchList(String count, Competition competition, List<Match> matches) {
 		super();
 		this.count = count;
 		this.competition = competition;
@@ -31,19 +31,19 @@ public class MatchListModel {
 		this.count = count;
 	}
 
-	public CompetitionModel getCompetition() {
+	public Competition getCompetition() {
 		return competition;
 	}
 
-	public void setCompetition(CompetitionModel competition) {
+	public void setCompetition(Competition competition) {
 		this.competition = competition;
 	}
 
-	public List<MatchModel> getMatches() {
+	public List<Match> getMatches() {
 		return matches;
 	}
 
-	public void setMatches(List<MatchModel> matches) {
+	public void setMatches(List<Match> matches) {
 		this.matches = matches;
 	}
 

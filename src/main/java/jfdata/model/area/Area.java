@@ -4,18 +4,18 @@ package jfdata.model.area;
  * CLass model for CompetitionArea, for Competition Class
  * @author remimarion
  */
-public class AreaModel {
+public class Area {
 
 	//ATTRIBUT
 	private String id;
 	private String name;
 
 	//CONSTRUCTOR
-	public AreaModel() {
+	public Area() {
 		super();
 	}
 	
-	public AreaModel(String id, String name) {
+	public Area(String id, String name) {
 		super();
 		this.id = id;
 		this.name = name;

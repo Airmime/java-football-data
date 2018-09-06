@@ -2,32 +2,32 @@ package jfdata.model.competition;
 
 import java.util.List;
 
-import jfdata.model.area.AreaModel;
+import jfdata.model.area.Area;
 
 /**
  * Class model for Competition
  * @author remimarion
  */
-public class CompetitionModel {
+public class Competition {
 	
 	//ATTRIBUT
 	private String id;
-	private AreaModel area;
+	private Area area;
 	private String name;
 	private String code;
 	private String plan;
-	private CompetitionSeasonModel currentSeason;
-	private List<CompetitionSeasonModel> seasons;
+	private CompetitionSeason currentSeason;
+	private List<CompetitionSeason> seasons;
 	private String lastUpdated;
 	
 	//CONSTRUCTOR
 	
-	public CompetitionModel() {
+	public Competition() {
 		super();
 	}
 	
-	public CompetitionModel(String id, AreaModel area, String name, String code, String plan,
-			CompetitionSeasonModel currentSeason, List<CompetitionSeasonModel> seasons, String lastUpdated) {
+	public Competition(String id, Area area, String name, String code, String plan,
+			CompetitionSeason currentSeason, List<CompetitionSeason> seasons, String lastUpdated) {
 		super();
 		this.id = id;
 		this.area = area;
@@ -49,11 +49,11 @@ public class CompetitionModel {
 		this.id = id;
 	}
 
-	public AreaModel getArea() {
+	public Area getArea() {
 		return area;
 	}
 
-	public void setArea(AreaModel area) {
+	public void setArea(Area area) {
 		this.area = area;
 	}
 
@@ -81,19 +81,19 @@ public class CompetitionModel {
 		this.plan = plan;
 	}
 
-	public CompetitionSeasonModel getCurrentSeason() {
+	public CompetitionSeason getCurrentSeason() {
 		return currentSeason;
 	}
 
-	public void setCurrentSeason(CompetitionSeasonModel currentSeason) {
+	public void setCurrentSeason(CompetitionSeason currentSeason) {
 		this.currentSeason = currentSeason;
 	}
 
-	public List<CompetitionSeasonModel> getSeasons() {
+	public List<CompetitionSeason> getSeasons() {
 		return seasons;
 	}
 
-	public void setSeasons(List<CompetitionSeasonModel> seasons) {
+	public void setSeasons(List<CompetitionSeason> seasons) {
 		this.seasons = seasons;
 	}
 

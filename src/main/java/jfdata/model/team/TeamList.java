@@ -2,28 +2,28 @@ package jfdata.model.team;
 
 import java.util.List;
 
-import jfdata.model.competition.CompetitionModel;
-import jfdata.model.competition.CompetitionSeasonModel;
+import jfdata.model.competition.Competition;
+import jfdata.model.competition.CompetitionSeason;
 
 /**
  * Class model for Team list
  * @author remimarion
  */
-public class TeamListModel {
+public class TeamList {
 	
 	//ATTRIBUT
 	private String count;
-	private CompetitionModel competition;
-	private CompetitionSeasonModel season;
-	private List<TeamModel> teams;
+	private Competition competition;
+	private CompetitionSeason season;
+	private List<Team> teams;
 	
 	//CONSTRUCTOR
-	public TeamListModel() {
+	public TeamList() {
 		super();
 	}
 	
-	public TeamListModel(String count, CompetitionModel competition, CompetitionSeasonModel season,
-			List<TeamModel> teams) {
+	public TeamList(String count, Competition competition, CompetitionSeason season,
+			List<Team> teams) {
 		super();
 		this.count = count;
 		this.competition = competition;
@@ -40,27 +40,27 @@ public class TeamListModel {
 		this.count = count;
 	}
 
-	public CompetitionModel getCompetition() {
+	public Competition getCompetition() {
 		return competition;
 	}
 
-	public void setCompetition(CompetitionModel competition) {
+	public void setCompetition(Competition competition) {
 		this.competition = competition;
 	}
 
-	public CompetitionSeasonModel getSeason() {
+	public CompetitionSeason getSeason() {
 		return season;
 	}
 
-	public void setSeason(CompetitionSeasonModel season) {
+	public void setSeason(CompetitionSeason season) {
 		this.season = season;
 	}
 
-	public List<TeamModel> getTeams() {
+	public List<Team> getTeams() {
 		return teams;
 	}
 
-	public void setTeams(List<TeamModel> teams) {
+	public void setTeams(List<Team> teams) {
 		this.teams = teams;
 	}
 

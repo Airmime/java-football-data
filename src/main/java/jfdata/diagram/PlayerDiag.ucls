@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="false" 
   realizations="false" associations="false" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="jfdata.model.player.PlayerModel" project="java-football-data" 
-    file="/java-football-data/src/main/java/jfdata/model/player/PlayerModel.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="jfdata.model.player.Player" project="java-football-data" 
+    file="/java-football-data/src/main/java/jfdata/model/player/Player.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="641" width="445" x="110" y="-64"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

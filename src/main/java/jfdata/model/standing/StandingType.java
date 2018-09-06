@@ -6,16 +6,16 @@ import java.util.List;
  * Class model for StandingTypeModel
  * @author remimarion
  */
-public class StandingTypeModel {
+public class StandingType {
 
 	//ATTRIBUT
 	private String stage;
 	private String type;
 	private String group;
-	private List<StandingTeamModel> table;
+	private List<StandingTeam> table;
 	
 	//CONSTRUCTOR
-	public StandingTypeModel(String stage, String type, String group, List<StandingTeamModel> table) {
+	public StandingType(String stage, String type, String group, List<StandingTeam> table) {
 		super();
 		this.stage = stage;
 		this.type = type;
@@ -48,11 +48,11 @@ public class StandingTypeModel {
 		this.group = group;
 	}
 
-	public List<StandingTeamModel> getTable() {
+	public List<StandingTeam> getTable() {
 		return table;
 	}
 
-	public void setTable(List<StandingTeamModel> table) {
+	public void setTable(List<StandingTeam> table) {
 		this.table = table;
 	}
 

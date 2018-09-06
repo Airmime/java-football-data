@@ -4,7 +4,7 @@ package jfdata.model.competition;
  * Class model for CompetitionSeason, for Competition Class
  * @author remimarion
  */
-public class CompetitionSeasonModel {
+public class CompetitionSeason {
 
 	//ATTRIBUT
 	private String id;
@@ -13,11 +13,11 @@ public class CompetitionSeasonModel {
 	private String currentMatchday;
 	
 	//CONSTRUCTOR
-	public CompetitionSeasonModel() {
+	public CompetitionSeason() {
 		super();
 	}
 	
-	public CompetitionSeasonModel(String id, String startDate, String endDate, String currentMatchday) {
+	public CompetitionSeason(String id, String startDate, String endDate, String currentMatchday) {
 		super();
 		this.id = id;
 		this.startDate = startDate;

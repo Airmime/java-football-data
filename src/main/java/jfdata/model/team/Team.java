@@ -2,20 +2,20 @@ package jfdata.model.team;
 
 import java.util.List;
 
-import jfdata.model.area.AreaModel;
-import jfdata.model.competition.CompetitionModel;
-import jfdata.model.player.PlayerModel;
+import jfdata.model.area.Area;
+import jfdata.model.competition.Competition;
+import jfdata.model.player.Player;
 
 /**
  * Class model for Team
  * @author remimarion
  */
-public class TeamModel {
+public class Team {
 	
 	//ATTRIBUT
 	private String id;
-	private AreaModel area;
-	private List<CompetitionModel> activeCompetitions;
+	private Area area;
+	private List<Competition> activeCompetitions;
 	private String name;
 	private String shortName;
 	private String tla;
@@ -26,17 +26,17 @@ public class TeamModel {
 	private String founded;
 	private String clubColors;
 	private String venue;
-	private List<PlayerModel> squad;
+	private List<Player> squad;
 	private String lastUpdated;
 	
 	//CONSTRUCTOR
-	public TeamModel() {
+	public Team() {
 		super();
 	}
 
-	public TeamModel(String id, AreaModel area, List<CompetitionModel> activeCompetitions, String name,
+	public Team(String id, Area area, List<Competition> activeCompetitions, String name,
 			String shortName, String tla, String address, String phone, String website, String email, String founded,
-			String clubColors, String venue, List<PlayerModel> squad, String lastUpdated) {
+			String clubColors, String venue, List<Player> squad, String lastUpdated) {
 		super();
 		this.id = id;
 		this.area = area;
@@ -64,11 +64,11 @@ public class TeamModel {
 		this.id = id;
 	}
 
-	public AreaModel getArea() {
+	public Area getArea() {
 		return area;
 	}
 
-	public void setArea(AreaModel area) {
+	public void setArea(Area area) {
 		this.area = area;
 	}
 
@@ -160,19 +160,19 @@ public class TeamModel {
 		this.lastUpdated = lastUpdated;
 	}
 
-	public List<CompetitionModel> getActiveCompetitions() {
+	public List<Competition> getActiveCompetitions() {
 		return activeCompetitions;
 	}
 
-	public void setActiveCompetitions(List<CompetitionModel> activeCompetitions) {
+	public void setActiveCompetitions(List<Competition> activeCompetitions) {
 		this.activeCompetitions = activeCompetitions;
 	}
 
-	public List<PlayerModel> getSquad() {
+	public List<Player> getSquad() {
 		return squad;
 	}
 
-	public void setSquad(List<PlayerModel> squad) {
+	public void setSquad(List<Player> squad) {
 		this.squad = squad;
 	}
 
